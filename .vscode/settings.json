@@ -1,0 +1,5 @@
+{
+    "files.exclude": {
+        "www/normalize.css": true
+    }
+}

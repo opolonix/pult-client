@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    width: 100%;
+    height: 100svh;
+
+    background-color: #000;
+}
+
+* {
+    font-family: "Roboto Mono", monospace;
+    -webkit-tap-highlight-color: #b4b4b427;
+}
+
+*::selection {
+    background-color: #3b3b3b8e;
+    color: #fff;
+}
+
+div.btn {
+    user-select: none;
+    cursor: pointer;
+    
+}
+
+div.wrapper {
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.bar {
+    width: 100%;
+    height: 100%;
+}
+
+div.bar.head {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+div.bar.head > div.audio > img {
+    height: 17px;
+}
+
+
+div.bar.head > div.device-name {
+    color: #dfdfdf;
+    transform: translateY(-5px);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 220px;
+}
+
+div.bar.central {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+div.bar.central > div.button.space {
+    background-color: #1c1c1e;
+    width: fit-content;
+    padding: 23px 30px;
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 20px;
+    transform: translateY(30px);
+}
+
+div.bar.central > div.nav-audio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.bar.central > div.nav-audio > div.button {
+    background-color: #1c1c1e;
+    padding: 60px 55px 60px 65px;
+    transform: translateX(40px);
+    border-radius: 50%;
+}
+
+div.bar.central > div.nav-audio > div.button.left {
+    rotate: 180deg;
+}
+
+div.bar.central > div.nav-audio > div.audio-bar {
+    background-color: #1c1c1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 15px 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 45px);
+    border-radius: 20px;
+    gap: 10px;
+
+}
+div.bar.central > div.nav-audio > div.audio-bar > div.split-line {
+    background-color: #dfdfdf21;
+    height: 2px;
+    width: 100%;
+}
+
+div.bar.central > div.nav-audio > div.audio-bar img {
+    width: 50px;
+}
+
+
+div.bar.bottom {
+    display: flex;
+    height: fit-content;
+    /* height: 80px; */
+    justify-content: space-evenly;
+    padding-bottom: 2px;
+}
+div.bar.bottom > div.screen {
+    background-color: #1c1c1e;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+div.bar.bottom > div.screen > img {
+    width: 30px;
+}
+
+div.bar.central > div.combinations {
+    display: flex;
+    max-width: 100svw;
+    overflow-x: scroll;
+    margin-top: 15px;
+    gap: 10px;
+    padding: 0 20px 5px;
+    scrollbar-width: none;
+}
+div.bar.central > div.combinations::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+div.bar.central > div.combinations > div.item {
+    background-color: #1c1c1e;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+div.bar.bottom > div.touch-screen {
+    background-color: #ffffff00;
+    height: 300px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    transition-duration: .1s;
+
+}
