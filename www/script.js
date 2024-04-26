@@ -14,6 +14,8 @@ const combinations = {
     "lang": "alt+shift",
     "c": "c",
     "f": "f",
+    //lbv_o
+    "m": "m"
 }
 
 const comb_wrapper = document.querySelector('div.combinations')
@@ -64,3 +66,14 @@ touchscreen.addEventListener('touchend', e => {
     if (increment == 0) fetch('/mouseClick')
     increment = 0
 })
+
+
+const audio_svg = document.getElementById('change-svg');
+
+function changeImage(){
+    if (audio_svg.attributes.src.value == 'assets/working-audio.svg'){
+        audio_svg.attributes.src.value = 'assets/blocked-audio.svg';
+    } else {
+        audio_svg.attributes.src.value = 'assets/working-audio.svg';
+    }
+};
