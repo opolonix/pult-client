@@ -165,11 +165,11 @@ div.bar.central > div.combinations > div.item {
 }
 
 div.bar.bottom > div.touch-screen {
-    background-color: #ffffff00;
-    height: 300px;
+    background-color: #070707;
+    padding-bottom: 75%;
     width: 100%;
     margin: 5px;
+    border: 2px 1C1C1E;
     border-radius: 10px;
     transition-duration: .1s;
-
 }
