@@ -1,1 +1,2 @@
-# control-board
+# Pult
+### remote control your PC
