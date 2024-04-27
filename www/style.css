@@ -14,7 +14,7 @@ body {
 
 *::selection {
     background-color: #3b3b3b8e;
-    color: #fff;
+    color: #FFF;
 }
 
 div.btn {
@@ -54,7 +54,7 @@ div.bar.head > div.audio > img {
 
 
 div.bar.head > div.device-name {
-    color: #dfdfdf;
+    color: #DFDFDF;
     transform: translateY(-5px);
     font-size: 16px;
     line-height: 24px;
@@ -69,7 +69,7 @@ div.bar.central {
 }
 
 div.bar.central > div.button.space {
-    background-color: #1c1c1e;
+    background-color: #1C1C1E;
     width: fit-content;
     padding: 23px 30px;
     border-radius: 20px;
@@ -86,7 +86,7 @@ div.bar.central > div.nav-audio {
     justify-content: space-between;
 }
 div.bar.central > div.nav-audio > div.button {
-    background-color: #1c1c1e;
+    background-color: #1C1C1E;
     padding: 60px 55px 60px 65px;
     transform: translateX(40px);
     border-radius: 50%;
@@ -97,7 +97,7 @@ div.bar.central > div.nav-audio > div.button.left {
 }
 
 div.bar.central > div.nav-audio > div.audio-bar {
-    background-color: #1c1c1e;
+    background-color: #1C1C1E;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,7 +130,7 @@ div.bar.bottom {
     padding-bottom: 2px;
 }
 div.bar.bottom > div.screen {
-    background-color: #1c1c1e;
+    background-color: #1C1C1E;
     width: 60px;
     height: 60px;
     display: flex;
@@ -157,7 +157,7 @@ div.bar.central > div.combinations::-webkit-scrollbar {
 }
 
 div.bar.central > div.combinations > div.item {
-    background-color: #1c1c1e;
+    background-color: #1C1C1E;
     color: #fff;
     white-space: nowrap;
     padding: 10px 20px;
@@ -166,10 +166,29 @@ div.bar.central > div.combinations > div.item {
 
 div.bar.bottom > div.touch-screen {
     background-color: #070707;
-    padding-bottom: 75%;
-    width: 100%;
-    margin: 5px;
-    border: 2px 1C1C1E;
-    border-radius: 10px;
+    padding-bottom: 55%;
+    width: 95%;
+    margin: 25px;
+    border: 2px solid #1C1C1E;
+    border-radius: 25px;
     transition-duration: .1s;
+}
+
+.select-bar{
+    background-color: #1C1C1E;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.select-bar>.btn{
+    color: white;
+    font-size: 12px;
+    
+    background-color: #1C1C1E;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+}
+.select-bar > .touch-screen{
+    background-color: #2E2E32;
 }

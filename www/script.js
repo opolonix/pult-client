@@ -62,7 +62,7 @@ touchscreen.addEventListener('touchmove', e => {
 
 
 touchscreen.addEventListener('touchend', e => {
-    touchscreen.style.backgroundColor = '#ffffff00'
+    touchscreen.style.backgroundColor = '#070707'
     if (increment == 0) fetch('/mouseClick')
     increment = 0
 })
