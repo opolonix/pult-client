@@ -146,11 +146,27 @@ div.bar.central > div.nav-audio > div.audio-bar img {
 
 div.bar.bottom {
     display: flex;
+    align-items: baseline;
     height: fit-content;
     /* height: 80px; */
     justify-content: space-evenly;
     padding-bottom: 2px;
 }
+
+div.bar.bottom > .buttons{
+    display:flex;
+    gap: 15px;
+}
+div.bar.bottom > .buttons > .btn.small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1E;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
 div.bar.bottom > div.screen {
     background-color: #1C1C1E;
     width: 60px;
@@ -221,13 +237,17 @@ div.bar.bottom > div.touch-screen {
 .key:focus{
     background-color: wheat;
 }
-.select-bar{
+
+.buttons.bottom{
+
+}
+.bar > .select{
     display: flex;
     background-color: #1C1C1E;
     border-radius: 25px;
     margin-bottom: 20px;
 }
-.select-bar>.btn{
+.bar > .select >.btn{
     color: white;
     font-size: 12px;
     
@@ -237,7 +257,7 @@ div.bar.bottom > div.touch-screen {
     border-radius: 25px;
     border: 0;
 }
-.select-bar > .touch-screen{
+.bar > .select > .touch-screen{
     background-color: #2E2E32;
 }
 

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon48.ico">
 
     <!--  Global wep-app  -->
-    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <!--  IOS wep-app  -->
     <meta name="theme-color" content="#000">
@@ -48,9 +48,15 @@
             <!-- <div class="screen touch btn"><img src="assets/touchscreen.svg" alt=""></div>
             <div class="screen keyboard btn"><img src="assets/keyboard.svg" alt=""></div> -->
         </div>
-        <div class="select-bar">
-            <button class="touch-screen btn"><img src="assets/touchscreen-active.svg" alt="touch-screen" draggable="false"></button>
-            <button class="keyboard btn"><img src="assets/keyboard-inactive.svg" alt="keyboard" draggable="false"></button>
+        <div class="bar bottom">
+            <div class="select">
+                <button class="touch-screen btn"><img src="assets/touchscreen-active.svg" alt="touch-screen" draggable="false"></button>
+                <button class="keyboard btn"><img src="assets/keyboard-inactive.svg" alt="keyboard" draggable="false"></button>
+            </div>
+            <div class="buttons">
+                <btn class="btn small fullscreen"><img src="assets/fullscreen-inactive.svg" alt="fullscreen"></btn>
+                <btn class="btn small captions"><img src="assets/captions-inactive.svg" alt="captions"></btn>
+            </div>
         </div>
         <input id="input-keyboard" type="hidden">
         <div class="keyboard bottom">
