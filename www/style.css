@@ -8,7 +8,9 @@ body {
 }
 
 * {
-    font-family: "Roboto Mono", monospace;
+    /*font-family: "Roboto Mono", monospace;*/
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
     -webkit-tap-highlight-color: #b4b4b427;
 }
 
@@ -54,11 +56,17 @@ div.bar.head > div.audio > img {
 
 div.bar.head > div.device-name {
     color: #DFDFDF;
-    transform: translateY(-5px);
     font-size: 16px;
+    font-weight: 590;
     line-height: 24px;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+
     width: 220px;
+    transform: translateY(-5px);
 }
 
 div.bar.central {
@@ -68,14 +76,16 @@ div.bar.central {
 }
 
 div.bar.central > div.button.space {
-    background-color: #1C1C1E;
-    width: fit-content;
-    padding: 23px 30px;
-    border-radius: 20px;
     color: #fff;
+    font-weight: 590;
+    font-size: 24px;
+    background-color: #1C1C1E;
+    border-radius: 20px;
+
+    width: fit-content;
+    padding: 26px 40px;
     margin: 0 auto;
-    font-weight: bolder;
-    font-size: 20px;
+    margin-bottom: 15px;
     transform: translateY(30px);
 }
 
@@ -183,18 +193,21 @@ div.bar.bottom > div.touch-screen {
 }
 
 .keyboard.bottom > .key{
-    visibility: cacl();
+    /*visibility: hidden;*/
     color: white;
     font-size: 20px;
+    font-weight: 500;
 
     background-color: #0A0A0A;
     border: solid 2px #1C1C1E;
     border-radius: 25px;
 
     margin-bottom: 20px;
-    padding: 8px 25px 8px 25px;
+    padding: 8px 25px;
 }
-
+.key:focus{
+    background-color: wheat;
+}
 .select-bar{
     display: flex;
     background-color: #1C1C1E;

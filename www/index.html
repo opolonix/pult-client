@@ -7,7 +7,15 @@
 
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
     <link rel="icon" href="assets/favicon.ico">
+
+    <!--  для IOS wep-app  -->
+    <link rel="apple-touch-icon" href="assets/favicon512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- если надо кастомное название для иконки
+    <meta name="apple-mobile-web-app-title" content="Pult: Пульт для ПК">!-->
     
     <title>Pult</title>
 </head>
@@ -15,7 +23,7 @@
     <div class="wrapper">
         <div class="bar head">
             <div class="audio btn" combination="m" onclick="changeImage()"><img id="change-svg" src="assets/working-audio.svg" alt="audio blocked"></div>
-            <div class="device-name">Название устройства</div>
+            <div class="device-name">Устройство не подключено</div>
             <div class="audio btn"><img src="assets/burger-menu.svg" alt="select preset"></div>
         </div>
         <div class="bar central">
