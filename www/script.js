@@ -68,7 +68,12 @@ touchscreen.addEventListener('touchend', e => {
 })
 
 
+document.getElementById("input-keyboard").focus();
 const audio_svg = document.getElementById('change-svg');
+
+window.onscroll = (e) => {
+    e.preventDefault()
+  };
 
 function changeImage(){
     if (audio_svg.attributes.src.value == 'assets/working-audio.svg'){
