@@ -173,7 +173,7 @@ div.bar.bottom > div.touch-screen {
     transition-duration: .1s;
 }
 .bar.bottom{
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 
