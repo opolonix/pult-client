@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#141414">
-
+    
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" href="assets/favicon.ico">
 
-
     <!--  Global wep-app  -->
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
     <!--  IOS wep-app  -->
+    <meta name="theme-color" content="#000">
     <link rel="apple-touch-icon" href="assets/favicon512.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
     <!-- если надо кастомное название для иконки
     <meta name="apple-mobile-web-app-title" content="Pult: Пульт для ПК">!-->
-
-    
     
     <title>Pult</title>
 </head>
-<body draggable="false">
+<body>
     <div class="wrapper">
         <div class="bar head">
             <div class="audio btn" combination="m" onclick="changeImage()"><img id="change-svg" src="assets/working-audio.svg" alt="audio blocked" draggable="false"></div>
@@ -47,8 +45,6 @@
         </div>
         <div class="bar bottom">
             <div class="touch-screen"></div>
-            
-            
             <!-- <div class="screen touch btn"><img src="assets/touchscreen.svg" alt=""></div>
             <div class="screen keyboard btn"><img src="assets/keyboard.svg" alt=""></div> -->
         </div>
